@@ -26,7 +26,7 @@
 
             <Button
                 x:Name="CounterBtn"
-                Text="This is a button to save lives" 
+                Text="Please Click this button" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
