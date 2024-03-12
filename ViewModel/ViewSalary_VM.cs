@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectCF_Mobile_Version.ViewModel
 {
-    public partial class LandingPage_VM : MainViewModel
+    public partial class ViewSalary_VM : MainViewModel
     {
-        
     }
 }
