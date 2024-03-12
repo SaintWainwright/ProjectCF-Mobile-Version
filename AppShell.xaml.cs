@@ -9,6 +9,7 @@ namespace ProjectCF_Mobile_Version
             InitializeComponent();
             Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
             Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
+            Routing.RegisterRoute(nameof(LandingPage), typeof(LandingPage));
         }
     }
 }
