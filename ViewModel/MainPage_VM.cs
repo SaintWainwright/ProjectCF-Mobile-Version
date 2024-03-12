@@ -10,10 +10,10 @@ namespace ProjectCF_Mobile_Version.ViewModel
 {
     public partial class MainPage_VM : MainViewModel
     {
-        private void LoginImage()
+        private void GoToLoginPage()
         {
             Shell.Current.GoToAsync(nameof(LoginPage));
         }
-        public ICommand LoginImageCommand => new Command(LoginImage);
+        public ICommand GoToLoginPageCommand => new Command(GoToLoginPage);
     }
 }

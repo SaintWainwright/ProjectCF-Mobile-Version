@@ -6,6 +6,6 @@
              xmlns:viewmodel="clr-namespace:ProjectCF_Mobile_Version.ViewModel"
              x:DataType="viewmodel:MainPage_VM">
     <Grid>
-        <Button Text="Go To LoginPage" Command="{Binding LoginImageCommand}"/>
+        <Button Text="Go To LoginPage" Command="{Binding GoToLoginPageCommand}"/>
     </Grid>
 </ContentPage>
