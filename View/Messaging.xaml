@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjectCF_Mobile_Version.View.LandingPage"
-             Title="LandingPage"
+             x:Class="ProjectCF_Mobile_Version.View.Messaging"
+             Title="Messaging"
              xmlns:viewmodel="clr-namespace:ProjectCF_Mobile_Version.ViewModel"
-             x:DataType="viewmodel:LandingPage_VM">
+             x:DataType="viewmodel:Messaging_VM">
     <VerticalStackLayout>
         <Label 
             Text="Welcome to .NET MAUI!"
