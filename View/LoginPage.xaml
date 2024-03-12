@@ -5,7 +5,25 @@
              Title="LoginPage"
              xmlns:viewmodel="clr-namespace:ProjectCF_Mobile_Version.ViewModel"
              x:DataType="viewmodel:LoginPage_VM">
-    <Grid>
-        <Button Text="Go to Landing page" Command="{Binding GoToLandingPageCommand}"/>
+    <Grid RowDefinitions="auto,Auto,*,*,*,*,*,*,*" VerticalOptions="Center" HorizontalOptions="Center" RowSpacing="10">
+        <ImageButton Source="back_arrow.png" Grid.Row="0" Margin="0,0,300,40"/>
+        <Image Source="projectcf_logo.png" Aspect="AspectFit" Grid.Row="1" HeightRequest="225" Margin="10"/>
+        <Label Text="Enter Account Information" Grid.Row="2" FontSize="Body"/>
+        <Label Text="Account ID:" Grid.Row="3" FontAttributes="Bold"/>
+        <Border Grid.Row="4" Stroke="Black" BackgroundColor="LightGrey">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8"/>
+            </Border.StrokeShape>
+            <Entry Placeholder="Input Account ID" TextColor="Black" PlaceholderColor="Black"/>
+        </Border>
+        <Label Text="Password:" Grid.Row="5"/>
+        <Border Grid.Row="6" Stroke="Black" BackgroundColor="LightGrey">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8"/>
+            </Border.StrokeShape>
+            <Entry Placeholder="Input Password" TextColor="Black" PlaceholderColor="black"/>
+        </Border>
+        <Label Text="Forget Password?" Grid.Row="7" FontAttributes="Italic" FontSize="Small"/>
+        <Button Text="Sign-In" Grid.Row="8" WidthRequest="90"/>
     </Grid>
 </ContentPage>
