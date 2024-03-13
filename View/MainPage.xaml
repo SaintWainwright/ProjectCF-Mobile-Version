@@ -6,6 +6,22 @@
              xmlns:viewmodel="clr-namespace:ProjectCF_Mobile_Version.ViewModel"
              x:DataType="viewmodel:MainPage_VM">
     <Grid>
-        <Button Text="Go To LoginPage" Command="{Binding GoToLoginPageCommand}"/>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="project_cf_mobile_mainpage.png" Aspect="AspectFill" Grid.Row="1" Grid.Column="0"/>
+                <Button ImageSource="projectcf_login_logo.png" HeightRequest="200" WidthRequest="200" BackgroundColor="Transparent" TextColor="Black" Grid.Row="1" Margin="10" VerticalOptions="Start" HorizontalOptions="End" Clicked="{Binding GoToLoginPageCommand}"/>
+                <Image Source="projectcf_logo.png" HeightRequest="250" WidthRequest="250" BackgroundColor="Transparent" Grid.Row="1"/>
+                <Label Text="Welcome to our Human Resources website, where we connect talented individuals with their dream careers and assist companies in finding the perfect fit for their teams. Discover a seamless hiring experience and a plethora of resources to foster a thriving work environment." TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" VerticalOptions="End" HorizontalOptions="Center" HeightRequest="250" WidthRequest="250" FontAttributes="Bold" FontAutoScalingEnabled="True"/>
+
+            </Grid>
+        </ScrollView>
     </Grid>
 </ContentPage>
