@@ -29,6 +29,6 @@
                 <TapGestureRecognizer />
             </Label.GestureRecognizers>
         </Label>
-        <Button Text="Sign-In" Grid.Row="7" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" BackgroundColor="#D9D9D9" TextColor="Black"  WidthRequest="90" Command="{Binding GoToLandingPageCommand}"/>
+        <Button Text="Sign-In" Grid.Row="7" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" BackgroundColor="#D9D9D9" TextColor="Black"  WidthRequest="90" Command="{Binding SignInCommand}"/>
     </Grid>
 </ContentPage>
