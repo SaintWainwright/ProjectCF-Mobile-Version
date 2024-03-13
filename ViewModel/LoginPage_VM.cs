@@ -61,7 +61,6 @@ namespace ProjectCF_Mobile_Version.ViewModel
         }
         private void SignIn()
         {
-            employee_Services.AddEmployee();
             string EmployeeID = string.Empty;
             if(IDExisting())
             {
