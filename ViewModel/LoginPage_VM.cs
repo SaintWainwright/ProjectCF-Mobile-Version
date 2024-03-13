@@ -12,8 +12,14 @@ namespace ProjectCF_Mobile_Version.ViewModel
     {
         private void GoToLandingPage()
         {
-            Shell.Current.GoToAsync(nameof(LandingPage));
+            Shell.Current.GoToAsync(nameof(LandingPage), false);
         }
         public ICommand GoToLandingPageCommand => new Command(GoToLandingPage);
+
+        private void GoToMainPage()
+        {
+            Shell.Current.GoToAsync(nameof(MainPage), false);
+        }
+        public ICommand GoToMainPageCommand => new Command(GoToMainPage);
     }
 }
