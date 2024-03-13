@@ -58,6 +58,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\back_arrow.svg" />
+	  <None Remove="Resources\Images\projectcf_login_logo.svg" />
 	  <None Remove="Resources\Images\projectcf_logo.png" />
 	</ItemGroup>
 
